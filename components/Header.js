@@ -22,8 +22,8 @@ function Header() {
       <div className="flex w-full p-6 items-center">
         <Image
           src="/assets/Google.svg"
-          height={40}
-          width={120}
+          height={35}
+          width={110}
           className="cursor-pointer"
           onClick={() => router.push("/")}
         />
