@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Header from "../components/Header";
 
 function Search() {
     return (
@@ -6,6 +7,8 @@ function Search() {
             <Head>
                 <title>Search</title>
             </Head>
+
+            <Header />
         </div>
     )
 }
