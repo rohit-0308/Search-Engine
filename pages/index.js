@@ -45,7 +45,7 @@ export default function Home() {
       </header>
 
       {/* Body */}
-      <form className="flex flex-col items-center  mt-[4rem] flex-grow w-4/5">
+      <form className="flex flex-col items-center  mt-[3rem] flex-grow w-4/5">
         <Image src="/assets/Google.svg" height={100} width={300} />
 
         <div className="flex w-full mt-5 hover:shadow-lg rounded-full focus-within:shadow-lg max-w-md border border-gray-200 px-4 py-2 items-center sm:max-w-xl lg:max-w-2xl">
@@ -67,7 +67,23 @@ export default function Home() {
             I'm Feeling Lucky
           </button>
         </div>
+
+        <div className="mt-16">
+        <p className="text-[0.8rem]">Google offered in: 
+        <span className="language"> हिन्दी  </span> 
+        <span className="language"> বাংলা </span> 
+        <span className="language"> తెలుగు </span> 
+        <span className="language"> मराठी </span> 
+        <span className="language"> தமிழ்</span> 
+        <span className="language"> ગુજરાતી</span> 
+        <span className="language"> ಕನ್ನಡ</span> 
+        <span className="language"> മലയാളം</span> 
+        <span className="language"> ਪੰਜਾਬੀ</span> 
+        </p>
+      </div>
       </form>
+
+      
 
       {/* Footer */}
       <Footer />
