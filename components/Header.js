@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { SearchIcon, XIcon } from "@heroicons/react/solid";
+import { SearchIcon, XIcon, ViewGridIcon } from "@heroicons/react/solid";
 import { useRouter } from "next/router";
 import { useRef } from "react";
-import Avatar from "../components/Avatar"
+import Avatar from "../components/Avatar";
 import HeaderOptions from "./HeaderOptions";
 
 function Header() {
@@ -54,8 +54,11 @@ function Header() {
           </button>
         </form>
 
-        <Avatar url="/assets/avatar.jpg" className="ml-auto" />
-        
+        <div className=" flex ml-auto">
+          <ViewGridIcon className="h-10 w-10 p-2 rounded-full hover:bg-gray-200 cursor-pointer mr-3" />
+
+          <Avatar url="/assets/avatar.jpg"  />
+        </div>
       </div>
       <HeaderOptions />
     </header>

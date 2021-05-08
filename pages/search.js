@@ -4,6 +4,7 @@ import { API_KEY, Context_Key } from "../keys";
 import Response from "../Response"
 import {useRouter } from "next/router";
 import SearchResults from "../components/SearchResults";
+import Footer from "../components/Footer"
 
 function Search({ results }) {
   console.log(results);
@@ -23,7 +24,7 @@ function Search({ results }) {
 export default Search;
 
 export async function getServerSideProps(context) {
-  const useDummyData = true;
+  const useDummyData = false;
   const startIndex = context.query.start || "0";
 
   const data = useDummyData ? Response : await fetch(
