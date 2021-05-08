@@ -45,7 +45,7 @@ export default function Home() {
       </header>
 
       {/* Body */}
-      <form className="flex flex-col items-center  mt-[3rem] flex-grow w-4/5">
+      <form className="flex flex-col items-center  mt-[4rem] flex-grow w-4/5">
         <Image src="/assets/Google.svg" height={100} width={300} />
 
         <div className="flex w-full mt-5 hover:shadow-lg rounded-full focus-within:shadow-lg max-w-md border border-gray-200 px-4 py-2 items-center sm:max-w-xl lg:max-w-2xl">
